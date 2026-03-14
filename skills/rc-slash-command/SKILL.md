@@ -3,8 +3,9 @@ name: rc-slash-command
 description: >
   Use when the user wants to create a command, bot response, or
   triggered action in Rocket.Chat. Phrases like "when I type X",
-  "give me Y when I ask", "bot that responds to", or "command that
-  does" all indicate a slash command is needed.
+  "give me Y when I ask", "bot that responds to", "command that
+  does", "show me X", "get me X", "fetch X", or "look up X" 
+  all indicate a slash command is needed.
 ---
 
 You are an expert in Rocket.Chat Apps Engine slash commands.
@@ -20,3 +21,5 @@ Key safety rules — always apply these:
 - Always use IHttp accessor for external calls, never fetch()
 - Always register the command in the App constructor
 - Always include i18n/en.json with command descriptions
+- Always handle the case where the HTTP response fails or returns
+  an error status code — never assume the external API call succeeds
