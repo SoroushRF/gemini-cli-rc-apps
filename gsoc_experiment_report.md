@@ -32,7 +32,7 @@ We created a new skill folder: `skills/rc-slash-command/`. The final `SKILL.md` 
 - **App Configuration:** Clear steps on registering custom commands inside the `extendConfiguration` method.
 - **Safety Constraints:** Strict rules on sender verification and graceful error handling.
 
-## Technical Details: Rocket.Chat Apps Engine
+### 2.3 Technical Details: Rocket.Chat Apps Engine
 
 Rather than embedding static documentation in the skill itself,
 the rc-slash-command skill references the Apps Engine type definitions
@@ -129,5 +129,11 @@ Without it, LLMs hallucinate framework specifics and write fragile code. With it
 1. **Consistency:** Guards against the AI "guessing" how the Rocket.Chat Apps Engine works.
 2. **Resilience:** Hardcodes safety constraints (try/catches, sender checks, optional chaining) directly into the AI's core instructions.
 3. **Accessibility:** Translates natural language intent into functional, deployable technical architecture that is completely transparent to the non-technical end-user.
+
+The next step is expanding this skill-based architecture to cover 
+the full RC Apps Engine feature surface — UIKit modals, persistence, 
+webhooks, and event listeners — each as a separate skill with 
+non-technical trigger descriptions, forming the complete 
+plug-and-play extension this project aims to deliver.
 
 *End of Log.*
