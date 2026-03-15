@@ -4,7 +4,7 @@ This document acts as a comprehensive resource for building various extension sk
 
 ---
 
-## 1. Event Interfaces (`rc-event-interface`)
+## 1. Event Interfaces (`rc-event-interface`) - (FOR FUTURE)
 
 ```yaml
 ---
@@ -82,7 +82,7 @@ export class EventExampleApp extends App implements IPreMessageSentPrevent, IPos
 }
 ```
 
-## 2. Email Communications (`rc-email`)
+## 2. Email Communications (`rc-email`) - (FOR FUTURE)
 
 ```yaml
 ---
@@ -510,7 +510,7 @@ export class PersistenceCommand implements ISlashCommand {
 
 ---
 
-## 7. OAuth2 Client (`rc-oauth2`)
+## 7. OAuth2 Client (`rc-oauth2`) - (FOR FUTURE)
 
 ```yaml
 ---
